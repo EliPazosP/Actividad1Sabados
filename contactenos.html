@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="./css/menu.css">
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    </head>
+    <body>
+        <!-- Inicia nuestro menú de la página -->
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    <!--Imagen del logo -->
+                    <img src="./img/logo.png" alt="">
+                </li>
+                <li>
+                    <a href="./index.html">Inicio</a>                
+                </li>
+                <li>
+                    <a href="./contactenos.html">Contáctenos</a>               
+                </li>
+                <!--<li>
+                    <a href="#">Materias</a>                
+                </li>-->
+            </ul>
+        </nav>
+        <!-- Fin del menú de la página -->
+
+        <div class="container">
+            <h1> Formulario de Personajes de Rick and Monty </h1>
+
+            <div>
+                <!-- Metodo POST = Maneje al información internamente  (Bastante información)-->
+                <!-- Metodo GET = Envía por medio de url (Muy poca y puntual información) -->
+                <form action="" method="post">
+                    <div class="section-flex">
+                        <div class="elemnt-form">
+                            <div class="label"><!-- Label modifica los títulos -->
+                                <label for="type">Tipo de Mensaje</label> 
+                            </div>
+                            <select name="type" id="type"><!-- Siempre van las propiedades de cada etiqueta de elementos de un formulario (name and id) para enviar los datos en el código-->
+                                <option value="">Seleccione una Opción</option>
+                                <option value="cotizacion">Cotización</option>
+                                <option value="saludo">Saludo</option>
+                                <option value="queja">Queja</option>
+                            </select>
+                        </div>
+
+                        <div class="elemnt-form">
+                            <div class="label"><!-- Label modifica los títulos -->
+                                <label for="name">Nombres</label> 
+                            </div>
+                            <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo"><!-- Habilita campo para ingreso de información / placeholder = Coloca mensaje al usuario para que sepa que debe hacer en tono gris dentro del recuadro-->
+                        </div>
+
+                        <div class="elemnt-form">
+                            <div class="label"><!-- Label modifica los títulos -->
+                                <label for="email">Email</label> 
+                            </div>
+                            <input type="text" name="email" id="email" placeholder="example@correo.com"><!-- Habilita campo para ingreso de información / placeholder = Coloca mensaje al usuario para que sepa que debe hacer en tono gris dentro del recuadro-->
+                        </div>
+
+                        <div class="elemnt-form">
+                            <div class="label"><!-- Label modifica los títulos -->
+                                <label for="phone">Celular</label> 
+                            </div>
+                            <input type="text" name="phone" id="phone" placeholder="Ingrese su Celular"><!-- Habilita campo para ingreso de información / placeholder = Coloca mensaje al usuario para que sepa que debe hacer en tono gris dentro del recuadro-->
+                        </div>
+
+                        <div class="elemnt-form">
+                            <div class="label"><!-- Label modifica los títulos -->
+                                <label for="comment">Comentario</label> 
+                            </div>
+                            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea><!--  Ingresar un campo para ingreso de comentario / Permite agrandar el campo -->
+                        </div>
+
+                        <div class="btn-div">
+                            <button type="submit" onclick="validaciondatos()">Enviar Datos</button><!-- onclick permite llamar la función que se encuentra en javascripdt  -->
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Creado por Elizabeth Pazos Pazos</p>
+        </footer>
+        
+        <!-- Una función es algo que me ejecuta una serie de códigos -->
+        <script src="./js/javascript.js"></script>
+
+    </body>
+</html>

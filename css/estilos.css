@@ -1,0 +1,100 @@
+/* Se quita margenes en la página de fondo */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, 
+h2 {
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Organiza los cuadros juntos o seguidos - Orden a los elementos */
+.section-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.character {
+    width: 25%;
+    margin: 3%;
+    border: 2px grey solid;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.character img {
+    width: 80%; /* Modifica el  tamaño*/
+    border-radius: 4%;
+}
+
+.info-character {
+    text-align: justify;
+    padding: 3%;/* Margen hacia adentro */
+}
+
+h2 {
+    margin-bottom: 2%; /* Margen inferior dentro del contenedor */
+    margin-top: 2%; /* Margen superior dentro del contenedor */
+    font-weight: bold; /* Resaltar como negrita o un poco la letra */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 80%; /* Alto de letra */
+    text-align: center; /* Centrar el texto */
+}
+
+footer p {
+    padding: 1%; /*Fondo*/
+    font-weight: bold; /* Resaltar como negrita o un poco la letra */
+}
+
+/* CSS del Formulario */
+form {
+    margin-left: 20%; /* margen de la parte izquierda */
+    margin-top: 5%; /* margen de la parte superior */
+    text-align: left; /* el texto a la parte izquierda */
+    width: 80%; /* Ocupa el porcentaje de la página */
+}
+
+.elemnt-form{
+    width: 100%; /* Se alinean los elementos al porcentaje que desee de la página */
+    margin-bottom: 2%;
+}
+
+.label {
+    width: 20%;
+    float: left; /* divide las opciones en la página */
+}
+
+.elemnt-form select,
+input,
+textarea {
+    width: 40%; /* Ancho de los recuadros */
+    height: 30px; /* Alto de los recuadros*/
+}
+
+.btn-div { /* Ajuste del botón */
+    text-align: center;
+    width: 80%;
+    margin-bottom: 7%; /* Reduce el espacio entre el botón y el pie de página */
+}
+
+.btn-div button {
+    background-color: blue;
+    border: 5px blue solid;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+}
